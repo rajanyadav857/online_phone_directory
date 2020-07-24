@@ -1,0 +1,23 @@
+
+ users table
+
+  id             int            autoincrement
+  user_id        int            autoincrement
+  created_date   current time stamp
+  Name
+  Email
+  password
+  mob
+
+CREATE TABLE `online_phone_directory`.`users` ( `id` INT NOT NULL AUTO_INCREMENT , `created_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , `name` VARCHAR(30) NOT NULL , `email` VARCHAR(30) NOT NULL , `password` VARCHAR(30) NOT NULL , `mob` VARCHAR(30) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+
+contact TABLE
+
+id
+user_id
+inserted_date
+Name
+mob
+
+CREATE TABLE `online_phone_directory`.`contact` ( `id` INT NOT NULL AUTO_INCREMENT , `inserted_by` VARCHAR(30) NOT NULL , `inserted_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , `name` VARCHAR(30) NOT NULL , `mob` VARCHAR(30) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
